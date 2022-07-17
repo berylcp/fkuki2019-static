@@ -7,40 +7,82 @@
 
     <title>FK UKI 2019 | Beranda</title>
 
-    <link rel="stylesheet" href="assets/css/style.css" />
+    <!-- CSS FK UKI 2019 -->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/tablet.style.css" />
+    <link rel="stylesheet" href="/assets/css/mobile.style.css" />
+
+    <!-- Material Icons dari Google -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <header>
       <nav class="navbar">
-        <a href="#" class="navbar__logo">FK UKI 2019</a>
+        <a class="navbar__logo" href="#">
+          <!-- <img src="/assets/img/logo.png" alt="logo.png" /> -->
+          fk uki 2019
+        </a>
 
         <ul class="navbar__nav">
-          <li><a class="nav__link active" href="#">Beranda</a></li>
-          <li><a class="nav__link" href="#">Galeri</a></li>
+          <li class="nav__item">
+            <a class="item__link" href="#">
+              <span class="material-icons-round">home</span>
+              <span class="link__text">beranda</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="item__link" href="#">
+              <span class="material-icons-round">collections</span>
+              <span class="link__text">galeri</span>
+            </a>
+          </li>
+
+          <li class="nav__item">
+            <a class="item__link" href="#">
+              <span class="material-icons-round">login</span>
+              <span class="link__text">login</span>
+            </a>
+          </li>
         </ul>
-
-        <div class="navbar__toggle">
-          <input type="checkbox" />
-
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
       </nav>
     </header>
 
     <main>
-      <section>
-        <p>Selamat datang</p>
+      <section class="hero">
+        <div class="hero__content">
+          <p class="content__text">
+            selamat datang di website resmi FK UKI 2019. Website ini dibuat
+            dengan tujuan mempermudah mahasiswa FK UKI angkatan 2019 dalam
+            mengakses materi perkuliahan.
+          </p>
+
+          <a href="#" class="content__button">masuk sekarang</a>
+        </div>
+
+        <img src="/assets/img/hello.png" alt="hello.png" class="hero__image" />
       </section>
 
-      <section>
-        <p>galeri</p>
+      <hr class="section-divider" />
+
+      <h1>Galeri</h1>
+      <section class="gallery">
+        <img src="/assets/img/default.jpg" />
+        <img src="/assets/img/default.jpg" />
+        <img src="/assets/img/default.jpg" />
+        <img src="/assets/img/default.jpg" />
+        <img src="/assets/img/default.jpg" />
+        <img src="/assets/img/default.jpg" />
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      <p>Hak Cipta 2019-2022 FK UKI 2019 asdasdasdasdasdasdasdadsasads</p>
+    </footer>
     <script src="assets/js/app.js"></script>
   </body>
 </html>
