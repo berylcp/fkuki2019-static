@@ -7,82 +7,216 @@
 
     <title>FK UKI 2019 | Beranda</title>
 
-    <!-- CSS FK UKI 2019 -->
     <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/tablet.style.css" />
-    <link rel="stylesheet" href="assets/css/mobile.style.css" />
-
-    <!-- Material Icons dari Google -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
     <header>
-      <nav class="navbar">
-        <a class="navbar__logo" href="#">
-          <!-- <img src="/assets/img/logo.png" alt="logo.png" /> -->
-          fk uki 2019
-        </a>
+      <div class="container container--flex">
+        <h1 class="header__logo">
+          <a href="#">FK UKI 2019</a>
+        </h1>
 
-        <ul class="navbar__nav">
-          <li class="nav__item">
-            <a class="item__link" href="#">
-              <span class="material-icons-round">home</span>
-              <span class="link__text">beranda</span>
-            </a>
+        <nav class="header__navbar">
+          <ul class="navbar__nav">
+            <li class="nav__item">
+              <a href="#" class="nav__link current-page">beranda</a>
+            </li>
+
+            <li class="nav__item"><a href="#" class="nav__link">galeri</a></li>
+          </ul>
+        </nav>
+
+        <div class="navbar__toggle">
+          <input type="checkbox" name="" id="" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+
+      <nav class="header__navbar--mobile">
+        <ul class="navbar--mobile__nav">
+          <li class="nav--mobile__item">
+            <a href="#" class="nav--mobile__link mobile--current-page"
+              >Beranda</a
+            >
           </li>
 
-          <li class="nav__item">
-            <a class="item__link" href="#">
-              <span class="material-icons-round">collections</span>
-              <span class="link__text">galeri</span>
-            </a>
-          </li>
-
-          <li class="nav__item">
-            <a class="item__link" href="#">
-              <span class="material-icons-round">login</span>
-              <span class="link__text">login</span>
-            </a>
+          <li class="nav--mobile__item">
+            <a href="#" class="nav--mobile__link">Galeri</a>
           </li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="hero">
-        <div class="hero__content">
-          <p class="content__text">
-            selamat datang di website resmi FK UKI 2019. Website ini dibuat
-            dengan tujuan mempermudah mahasiswa FK UKI angkatan 2019 dalam
-            mengakses materi perkuliahan.
-          </p>
+    <div class="container">
+      <main role="main">
+        <section class="hero">
+          <div class="container--flex">
+            <div class="hero__main">
+              <p class="hero__text">
+                selamat datang di
+                <strong
+                  >website resmi
+                  <span class="text-transform--uppercase">fk uki</span>
+                  2019</strong
+                >. website ini dibuat dengan tujuan dapat mempermudah mahasiswa
+                <span class="text-transform--uppercase">fk uki</span> angkatan
+                2019 dalam mengakses materi perkuliahan.
+              </p>
 
-          <a href="#" class="content__button">masuk sekarang</a>
-        </div>
+              <a href="#" class="hero__button">masuk sekarang</a>
+            </div>
 
-        <img src="assets/img/hello.png" alt="hello.png" class="hero__image" />
-      </section>
+            <div class="hero__secondary">
+              <img
+                src="assets/img/hello.png"
+                alt="hello.png"
+                class="hero__image"
+              />
+            </div>
+          </div>
+        </section>
 
-      <hr class="section-divider" />
+        <section class="gallery">
+          <h2 class="gallery__title">galeri</h2>
 
-      <h1>Galeri</h1>
-      <section class="gallery">
-        <img src="assets/img/default.jpg" />
-        <img src="assets/img/default.jpg" />
-        <img src="assets/img/default.jpg" />
-        <img src="assets/img/default.jpg" />
-        <img src="assets/img/default.jpg" />
-        <img src="assets/img/default.jpg" />
-      </section>
-    </main>
+          <div class="container--grid">
+            <article class="gallery__card">
+              <div class="card__main">
+                <h3 class="card__title">Lorem, ipsum.</h3>
+                <p class="card__body">
+                  lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  non voluptatibus exercitationem totam quaerat sed.
+                </p>
+              </div>
+
+              <div class="card__secondary">
+                <img
+                  src="assets/img/default.jpg"
+                  alt="default.jpg"
+                  class="card__image"
+                />
+                <div class="card__info">21 juli 2022</div>
+              </div>
+            </article>
+
+            <article class="gallery__card">
+              <div class="card__main">
+                <h3 class="card__title">Lorem, ipsum.</h3>
+                <p class="card__body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  non voluptatibus exercitationem totam quaerat sed.
+                </p>
+              </div>
+
+              <div class="card__secondary">
+                <img
+                  src="assets/img/default.jpg"
+                  alt="default.jpg"
+                  class="card__image"
+                />
+                <div class="card__info">21 juli 2022</div>
+              </div>
+            </article>
+
+            <article class="gallery__card">
+              <div class="card__main">
+                <h3 class="card__title">Lorem, ipsum.</h3>
+                <p class="card__body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  non voluptatibus exercitationem totam quaerat sed.
+                </p>
+              </div>
+
+              <div class="card__secondary">
+                <img
+                  src="assets/img/default.jpg"
+                  alt="default.jpg"
+                  class="card__image"
+                />
+                <div class="card__info">21 juli 2022</div>
+              </div>
+            </article>
+
+            <article class="gallery__card">
+              <div class="card__main">
+                <h3 class="card__title">Lorem, ipsum.</h3>
+                <p class="card__body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  non voluptatibus exercitationem totam quaerat sed.
+                </p>
+              </div>
+
+              <div class="card__secondary">
+                <img
+                  src="assets/img/default.jpg"
+                  alt="default.jpg"
+                  class="card__image"
+                />
+                <div class="card__info">21 juli 2022</div>
+              </div>
+            </article>
+
+            <article class="gallery__card">
+              <div class="card__main">
+                <h3 class="card__title">Lorem, ipsum.</h3>
+                <p class="card__body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  non voluptatibus exercitationem totam quaerat sed.
+                </p>
+              </div>
+
+              <div class="card__secondary">
+                <img
+                  src="assets/img/default.jpg"
+                  alt="default.jpg"
+                  class="card__image"
+                />
+                <div class="card__info">21 juli 2022</div>
+              </div>
+            </article>
+
+            <article class="gallery__card">
+              <div class="card__main">
+                <h3 class="card__title">Lorem, ipsum.</h3>
+                <p class="card__body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                  non voluptatibus exercitationem totam quaerat sed.
+                </p>
+              </div>
+
+              <div class="card__secondary">
+                <img
+                  src="assets/img/default.jpg"
+                  alt="default.jpg"
+                  class="card__image"
+                />
+                <div class="card__info">21 juli 2022</div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </main>
+    </div>
 
     <footer>
-      <p>Hak Cipta 2019-2022 FK UKI 2019 asdasdasdasdasdasdasdadsasads</p>
+      <div class="container">
+        <div class="footer__main">
+          <div class="footer__nav"></div>
+
+          <div class="footer__contact"></div>
+        </div>
+        <div class="footer__secondary">
+          <p class="footer__copyright">
+            hak cipta 2019-2022
+            <span class="text-transform--uppercase">fk uki</span> 2019
+          </p>
+        </div>
+      </div>
     </footer>
+
     <script src="assets/js/app.js"></script>
   </body>
 </html>
